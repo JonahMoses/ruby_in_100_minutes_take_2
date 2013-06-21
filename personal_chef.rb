@@ -24,6 +24,16 @@ class PersonalChef
 		year = Date.today.year
 		puts "Happy #{today}, it's the #{day_of_year} day of #{year}"
 	end
+
+	def gameplan(meals)
+		meals.each do |meal|
+			puts "We'll have #{meal}..."
+		end
+
+		all_meals = meals.join(", ")
+		puts "In summary: #{all_meals}"
+	end
+	
 end
 
 
