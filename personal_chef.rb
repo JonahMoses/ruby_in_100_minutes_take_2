@@ -1,7 +1,12 @@
 class PersonalChef
+
 	def make_toast(color)
-		puts "Making your toast, #{color}, sir"
-		return self
+  		if color.nil?
+    		puts "How am I supposed to make nothingness toast?"
+  		else
+    		puts "Making your toast #{color}!"
+  		end
+  		return self
 	end
 
 	def make_eggs(quantity)
@@ -62,13 +67,14 @@ class PersonalChef
 		return self
 	end
 
-
 end
 
 
 class Butler
+
 	def open_door(door)
 		puts "Opening #{door} Door, Sir!"
 		return self	
 	end
+
 end
